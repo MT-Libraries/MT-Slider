@@ -1,0 +1,78 @@
+@import "../../static/public.less";
+
+// MT.SLIDER
+
+.mt-slider {
+    
+    margin: 0 auto;
+    max-width: 100%;
+    // max-width:1000px;
+    overflow: hidden;
+    position: relative;
+    
+    .mt-slider-wrap {
+        position: absolute;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            display: block;
+            float: left;
+            
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+            }  
+        }   
+        
+        &:after {
+            content: ' ';
+            display: block;
+            width: 0;
+            clear: both;
+        }         
+        
+    }  
+    
+    .mt-slider-indicator {
+        
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 0;
+        width: 70px;
+        
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            padding: 5px;
+        
+            a {
+                display: block;
+                
+                width: 10px;
+                height: 10px;
+                
+                border-radius: 10px;
+                
+                background: #000;
+                
+                &.active{
+                    background: #fff !important;
+                }
+            }
+            
+        }
+    }          
+}
+
+
+
+
+

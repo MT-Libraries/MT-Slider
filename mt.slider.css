@@ -1,0 +1,78 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: 12px "Open Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #2d2d2d;
+}
+.container {
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+header {
+  font-size: 1.4rem;
+  padding: 0.5em 0;
+}
+article {
+  padding: 1em 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+footer {
+  padding: 1em 0;
+  text-align: right;
+}
+.mt-slider {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.mt-slider .mt-slider-wrap {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mt-slider .mt-slider-wrap li {
+  display: block;
+  float: left;
+}
+.mt-slider .mt-slider-wrap li img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.mt-slider .mt-slider-wrap:after {
+  content: ' ';
+  display: block;
+  width: 0;
+  clear: both;
+}
+.mt-slider .mt-slider-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  width: 70px;
+  list-style: none;
+}
+.mt-slider .mt-slider-indicator li {
+  display: inline-block;
+  padding: 5px;
+}
+.mt-slider .mt-slider-indicator li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #000;
+}
+.mt-slider .mt-slider-indicator li a.active {
+  background: #fff !important;
+}
