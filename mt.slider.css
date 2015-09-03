@@ -20,6 +20,12 @@ article {
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
+article img {
+  max-width: 100%;
+}
+section {
+  padding: 2em 0;
+}
 footer {
   padding: 1em 0;
   text-align: right;
@@ -52,6 +58,24 @@ footer {
   width: 0;
   clear: both;
 }
+.mt-slider .mt-slider-prev,
+.mt-slider .mt-slider-next {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.mt-slider .mt-slider-prev {
+  left: 0;
+}
+.mt-slider .mt-slider-next {
+  right: 0;
+}
 .mt-slider .mt-slider-indicator {
   position: absolute;
   left: 0;
@@ -59,20 +83,15 @@ footer {
   bottom: 0;
   margin: auto;
   padding: 0;
-  width: 70px;
-  list-style: none;
+  text-align: center;
+  padding: 5px 0;
 }
-.mt-slider .mt-slider-indicator li {
+.mt-slider .mt-slider-indicator a {
   display: inline-block;
   padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
 }
-.mt-slider .mt-slider-indicator li a {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #000;
-}
-.mt-slider .mt-slider-indicator li a.active {
+.mt-slider .mt-slider-indicator a.active {
   background: #fff !important;
 }

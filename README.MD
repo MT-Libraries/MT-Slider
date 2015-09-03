@@ -1,10 +1,18 @@
 # Slider
 
-平滑轮播切换示例. Unlimited $ Smooth Loop Slider.
+平滑轮播切换示例. Smooth Loop Slider.
 
 [https://github.com/MT-Libraries/MT-Slider](https://github.com/MT-Libraries/MT-Slider)
 
 ## Changelogs
+
+2015.09.04
+
+- add prev & next 
+- add indicator
+- add jump to special index
+- add states
+- fuck pm.
 
 2015.09.02
 
