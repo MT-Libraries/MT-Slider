@@ -37,6 +37,30 @@
         
     }  
     
+    .mt-slider-prev,
+    .mt-slider-next{
+        display: block;  
+        
+        position: absolute;
+        top:0;
+        bottom: 0;
+        margin: auto;  
+        
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        
+        text-decoration: none;
+    }
+    
+    .mt-slider-prev{
+        left: 0;  
+    }
+    
+    .mt-slider-next{
+        right: 0;
+    }
+    
     .mt-slider-indicator {
         
         position: absolute;
@@ -45,29 +69,22 @@
         bottom: 0;
         margin: auto;
         padding: 0;
-        width: 70px;
         
-        list-style: none;
+        text-align: center;
         
-        li {
+        padding: 5px 0;
+        
+        a {
+            
             display: inline-block;
             padding: 5px;
-        
-            a {
-                display: block;
-                
-                width: 10px;
-                height: 10px;
-                
-                border-radius: 10px;
-                
-                background: #000;
-                
-                &.active{
-                    background: #fff !important;
-                }
+
+            border-radius: 4px;
+            text-decoration: none;
+
+            &.active{
+                background: #fff !important;
             }
-            
         }
     }          
 }

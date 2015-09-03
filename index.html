@@ -7,27 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MT.Slider</title>
     <link rel="stylesheet" href="mt.slider.css">
-    
+
     <style>
         .blue {
-            
-            background: #00f; 
+            background: #00f;
         }
         
-        .green{
+        .green {
             background: #0f0;
         }
         
-        .red{
-            background: #f00; 
+        .red {
+            background: #f00;
         }
         
-        .item{
-            width: 200px;
-            height: 200px;   
+        .yellow{
+            background: #ff0;
+        }
+        
+        .item {
+            width: 400px;
+            height: 200px;
             opacity: 0.5;
             border-radius: 4px;
-            
             color: #000;
             line-height: 50px;
             text-align: center;
@@ -40,8 +42,9 @@
         <header>Slider.MT.Libraries</header>
         <hr>
         <article>
-            无缝切换轮播示例. Unlimited & Smooth Loop Slider.
-            <br>  
+            平滑循环轮播示例. Smooth Loop Slider.
+            <br>
+ 
         </article>
         <section>
             <div id="slider" class="mt-slider">
@@ -49,30 +52,37 @@
                     <li class="item red">ONE</li>
                     <li class="item green">TWO</li>
                     <li class="item blue">THREE</li>
+                    <li class="item yellow">FOUR</li>
                 </ul>
 
-                <ul class="mt-slider-indicator">
-                    <li>
-                        <a href="#" class="active"></a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                </ul>
+                <a href="#" class="mt-slider-prev">Prev</a>
+                <a href="#" class="mt-slider-next">Next</a>
+
+                <div class="mt-slider-indicator">
+                    <a href="#" class="active">ONE</a>
+                    <a href="#">TWO</a>
+                    <a href="#">THREE</a>
+                    <a href="#">FOUR</a>
+                </div>
             </div>
 
-            <!--Include Lib-->           
+            <!--Include Lib dev-->
+            <!--<script src="http://localhost:8090/public/vendors/jquery/dist/jquery.min.js"></script>
+            <script src="http://localhost:8090/public/vendors/move.js/move.min.js"></script>-->
+
+            <!--Include Lib-->
             <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
             <script src="//cdn.bootcss.com/move.js/0.4.0/move.min.js"></script>
 
             <!--Include mt.slider-->
             <script src="mt.slider.js"></script>
         </section>
+        <article>
+            <hr>
+            <img src="mt.slider.png" alt="">
+        </article>
         <footer>
-            By Thonatos.Yang . 2015 ©  MT-Libraries .
+            By Thonatos.Yang . 2015 © MT-Libraries .
         </footer>
     </div>
 </body>
