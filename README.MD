@@ -2,8 +2,8 @@
 
 平滑轮播切换示例. Smooth Loop Slider.
 
-[https://github.com/MT-Libraries/MT-Slider](https://github.com/MT-Libraries/MT-Slider)
-[Demo](http://mt-libraries.github.io/MT-Slider/)
+- [https://github.com/MT-Libraries/MT-Slider](https://github.com/MT-Libraries/MT-Slider)
+- [Demo](http://mt-libraries.github.io/MT-Slider/)
 
 ## Changelogs
 
