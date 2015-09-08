@@ -99,9 +99,15 @@ $(document).ready(function () {
                             'position': 'static'
                         });
 
-                        $sliderWrap.css({
-                            'left': -_listItemWidth * INDEX_MAX + 'px'
-                        });
+                        // $sliderWrap.css({
+                        //     'left': -_listItemWidth * INDEX_MAX + 'px',
+                        //     'transition-duration':'0ms'
+                        // });
+                        
+                        move('#slider .mt-slider-wrap')
+                            .set('left', -_listItemWidth * INDEX_MAX + 'px')
+                            .duration('0ms')
+                            .end();
 
                         INDEX = INDEX_MAX;
                     }
@@ -115,9 +121,15 @@ $(document).ready(function () {
                             'position': 'static'
                         });
 
-                        $sliderWrap.css({
-                            'left': '0'
-                        });
+                        // $sliderWrap.css({
+                        //     'left': '0',
+                        //     'transition-duration':'0ms'
+                        // });
+                        
+                        move('#slider .mt-slider-wrap')
+                            .set('left', '0px')
+                            .duration('0ms')
+                            .end();
 
                         INDEX = 0;
 
